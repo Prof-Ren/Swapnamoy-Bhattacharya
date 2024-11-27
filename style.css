@@ -1,0 +1,177 @@
+ /* styling the navigation bar */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    height: 16vh;
+    justify-content: space-around;
+    align-items: center;
+    gap: 350px;
+}
+
+.right ul {
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    gap: 45px;
+}
+
+.right ul li {
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo img {
+    height: 50px;
+}
+
+ul li img {
+    position: relative;
+    left: 5px;
+    top: 2px;
+}
+
+/* styling the heading */
+
+/* main .heading {} */
+
+main .heading .main-heading {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    margin-top: 66px;
+    margin-bottom: 45px;
+}
+
+.main-heading .image img {
+    position: relative;
+    top: 23px;
+}
+
+.main-heading h1 {
+    font-size: 50px;
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-heading h1 .hilight {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main .heading .upper-line {
+    margin-left: 200px;
+    width: 70vw;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main .heading .lower-line {
+    margin-left: 520px;
+    line-height: 2;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main .heading .h-button {
+    margin: 28px 0px 50px 518px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* border: 2px solid blue; */
+    width: 270px;
+    height: 45px;
+    padding: 13px 6px 0px 16px;
+    border-radius: 7px;
+    background-color: rgb(3, 182, 182);
+    color: white;
+}
+
+.version {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    height: 17vh;
+    width: 73vw;
+    margin-left: 170px;
+}
+
+.version h2 {
+    line-height: 0.4;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.version .logo {
+    height: 60px;
+    width: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    bottom: 15px;
+    font-size: 26px;
+    padding: 15px 0px 0px 11px;
+    border-radius: 5px;
+    background-color: rgb(243, 243, 3);
+}
+
+.lang {
+    display: grid;
+    width: 98vw;
+    height: 110vh;
+    /* border: 2px solid black; */
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid {
+    /* border: 2px solid black; */
+    display: grid;
+    justify-items: center;
+    grid-template-areas: "language language"
+        "lang_name lang_name"
+        "box1 box2";
+    align-items: center;
+}
+
+.langs {
+    grid-area: language;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 21px;
+}
+
+.small {
+    grid-area: lang_name;
+    font-size: 13px;
+    font-family: 'Courier New', Courier, monospace;
+    align-self: first baseline;
+}
+
+.button1 {
+    grid-area: box1;
+    background-color: rgb(1, 183, 183);
+    left: 25px;
+}
+
+.button2 {
+    grid-area: box2;
+    background-color: rgb(71, 174, 71);
+    right: 10px;
+}
+
+.button1,
+.button2 {
+    align-self: baseline;
+    color: white;
+    height: 32px;
+    width: 160px;
+    padding: 7px 0px 0px 23px;
+    border-radius: 7px;
+    position: relative;
+}
+
+.button1 a,
+.button2 a {
+    color: white;
+    text-decoration: none;
+}
